@@ -1,0 +1,39 @@
+$height: 40px;
+
+@mixin rounded() {
+    height: $height;
+    box-sizing: border-box;
+    padding: 4px 1.2rem;
+    border-radius: calc($height / 2);
+    outline: none;
+    
+  }
+
+.search-container{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #edebeb;
+    input{
+        flex-grow:1;
+        max-width: 50%;
+        @include rounded();
+        border: none;
+    }
+    button{
+        @include rounded();
+        cursor: pointer;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(163,29,61,0.59156162464986) 0%, rgba(0,212,255,1) 100%);
+        color: #fff;
+        font-weight: 600;
+        border: none;
+    }
+   
+    img{
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+    }
+}
