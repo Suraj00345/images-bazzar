@@ -15,6 +15,11 @@
         height: 250px;
         cursor: pointer;
         transition: 0.6s;
+        padding: 20px;
+        .likes{
+            display: flex;
+            gap: 20px;
+        }
       }
     .image-wrapper:hover {
         scale: 1.02;

@@ -12,6 +12,11 @@ import "../styles/images-list.scss";
                 return (
                     <div className="image-wrapper">
                     <CustomImage url={item.urls.regular} key={item.id}/>
+                    <div className="likes">
+                                <span className="material-icons" style={{color: "red"}}>favorite</span>
+                                <span style={{padding:"3px"}}>{item.likes}</span>
+                    </div>
+                    <p className="title">{item.tags[0]?.source?.title ?? item.description}</p>
                     </div>
                 )
               })
